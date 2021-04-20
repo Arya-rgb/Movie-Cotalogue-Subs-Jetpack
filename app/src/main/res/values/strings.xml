@@ -11,4 +11,5 @@
     <string name="tvShowName">tvShowName</string>
     <string name="tvShowRate">tvShowRate</string>
     <string name="tvShowMovieRelease">tvShowMovieRelease</string>
+    <string name="movie_catalogue">Movie Catalogue</string>
 </resources>
