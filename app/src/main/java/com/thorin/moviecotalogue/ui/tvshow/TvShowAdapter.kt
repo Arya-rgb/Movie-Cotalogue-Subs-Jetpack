@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.thorin.moviecotalogue.R
+import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.databinding.ItemsTvshowBinding
 
@@ -35,6 +36,12 @@ class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
             }
         }
 
+    }
+
+    fun setTvShow(tvShow: List<TvShowEntity>?) {
+        if (null == tvShow) return
+        this.listTvShow.clear()
+        this.listTvShow.addAll(tvShow)
     }
 
     override fun onCreateViewHolder(
