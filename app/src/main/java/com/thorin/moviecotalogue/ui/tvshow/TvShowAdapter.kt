@@ -1,5 +1,6 @@
 package com.thorin.moviecotalogue.ui.tvshow
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +10,8 @@ import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.databinding.ItemsTvshowBinding
+import com.thorin.moviecotalogue.ui.detail.detailmovie.MovieDetailActivity
+import com.thorin.moviecotalogue.ui.detail.detailtvshow.DetailTvShowActivity
 
 class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
 
@@ -33,6 +36,13 @@ class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
                             .error(R.mipmap.ic_launcher_round)
                     )
                     .into(imgPoster)
+
+                itemView.setOnClickListener {
+                    val intent = Intent(itemView.context, DetailTvShowActivity::class.java)
+                    intent.putExtra(DetailTvShowActivity.EXTRA_TV, tvShow.tvShowId)
+                    itemView.context.startActivity(intent)
+                }
+
             }
         }
 

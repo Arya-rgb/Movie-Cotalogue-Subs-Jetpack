@@ -32,7 +32,6 @@ class MovieDetailActivity : AppCompatActivity() {
 
         setSupportActionBar(activityMovieDetailBinding.toolbar)
 
-        activityMovieDetailBinding.toolbarLayout.title = title
         activityMovieDetailBinding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
@@ -61,6 +60,8 @@ class MovieDetailActivity : AppCompatActivity() {
         detailContentBinding.movieDescription.text = movieEntity.movieDescription
         detailContentBinding.movieGenre.text = movieEntity.movieGenre
         detailContentBinding.movieLocation.text = movieEntity.movieLocation
+
+        activityMovieDetailBinding.toolbarLayout.title = movieEntity.movieName
 
         Glide.with(this)
             .load(movieEntity.imagePath)

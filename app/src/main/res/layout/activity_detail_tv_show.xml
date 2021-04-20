@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.detail.detailmovie.MovieDetailActivity">
+    tools:context=".ui.detail.detailtvshow.DetailTvShowActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -31,7 +31,7 @@
                 app:popupTheme="@style/Theme.MovieCotalogue.PopupOverlay" />
 
             <ImageView
-                android:id="@+id/image_poster_detail"
+                android:id="@+id/image_poster_detail_tv"
                 android:layout_width="300dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
@@ -42,7 +42,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include android:id="@+id/detail_movie" layout="@layout/content_detail_movie" />
+    <include android:id="@+id/content_tv_show" layout="@layout/content_detial_tvshow" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
