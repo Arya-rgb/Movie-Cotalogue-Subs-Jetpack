@@ -19,6 +19,8 @@ class SplashActivity : AppCompatActivity() {
         splashActivityBinding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(splashActivityBinding.root)
 
+        supportActionBar?.hide()
+
         Glide.with(this)
             .load(R.drawable.ic_splash_screen)
             .into(splashActivityBinding.imageSplash)
