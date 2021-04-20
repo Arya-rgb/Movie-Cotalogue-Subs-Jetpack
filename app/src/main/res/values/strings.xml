@@ -8,4 +8,7 @@
     <string name="movie_name">movieName</string>
     <string name="movie_release">movieRelease</string>
     <string name="movieRate">movie_rate</string>
+    <string name="tvShowName">tvShowName</string>
+    <string name="tvShowRate">tvShowRate</string>
+    <string name="tvShowMovieRelease">tvShowMovieRelease</string>
 </resources>

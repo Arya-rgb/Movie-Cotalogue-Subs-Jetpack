@@ -142,7 +142,7 @@ object DataHelper {
 
     }
 
-    fun generateDummyTvShow(): List<TvShowEntity> {
+    fun generateDataTvShow(): List<TvShowEntity> {
         val tvShow = ArrayList<TvShowEntity>()
 
         tvShow.add(
