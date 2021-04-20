@@ -11,6 +11,7 @@
 
 
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
@@ -22,11 +23,10 @@
         android:id="@+id/movieRelease_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:gravity="start"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="movieRelease" />
 
     <TextView
