@@ -23,9 +23,6 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                 movieName.text = movie.movieName
                 movieRelease.text = movie.movieRelease
                 movieRate.text = movie.movieRate
-                movieDescription.text = movie.movieDescription
-                movieGenre.text = movie.movieGenre
-                movieLocation.text = movie.movieLocation
                 Glide.with(itemView.context)
                     .load(movie.imagePath)
                     .apply(
