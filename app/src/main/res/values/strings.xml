@@ -12,4 +12,7 @@
     <string name="tvShowRate">tvShowRate</string>
     <string name="tvShowMovieRelease">tvShowMovieRelease</string>
     <string name="movie_catalogue">Movie Catalogue</string>
+    <string name="deskripsi_film">Deskripsi Film</string>
+    <string name="genre_film">Genre Film</string>
+    <string name="lokasi_shooting_film">Lokasi Shooting Film</string>
 </resources>
