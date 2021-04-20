@@ -11,6 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCotalogue">
+        <activity
+            android:name=".ui.detail.detailmovie.MovieDetailActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.MovieCotalogue.NoActionBar"></activity>
+        <activity android:name=".ui.detail.DetailMovieActivity" />
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

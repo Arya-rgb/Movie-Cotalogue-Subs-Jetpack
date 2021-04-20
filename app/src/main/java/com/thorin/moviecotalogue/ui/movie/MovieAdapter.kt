@@ -1,5 +1,6 @@
 package com.thorin.moviecotalogue.ui.movie
 
+import android.content.Intent
 import android.text.Layout
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.databinding.ItemsMovieBinding
+import com.thorin.moviecotalogue.ui.detail.detailmovie.MovieDetailActivity
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
@@ -31,6 +33,13 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                             .error(R.mipmap.ic_launcher_round)
                     )
                     .into(imgPoster)
+
+                itemView.setOnClickListener {
+                    val intent = Intent(itemView.context, MovieDetailActivity::class.java)
+                    intent.putExtra(MovieDetailActivity.EXTRA_MOVIE, movie.movieId)
+                    itemView.context.startActivity(intent)
+                }
+
             }
         }
     }
