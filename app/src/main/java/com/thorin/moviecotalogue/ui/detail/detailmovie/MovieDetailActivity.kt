@@ -58,9 +58,8 @@ class MovieDetailActivity : AppCompatActivity() {
         detailContentBinding.movieReleaseDetail.text = movieEntity.movieRelease
         detailContentBinding.movieRateDetail.text = movieEntity.movieRate
         detailContentBinding.movieDescription.text = movieEntity.movieDescription
-        detailContentBinding.movieGenre.text = movieEntity.movieGenre
+        detailContentBinding.movieGenreDetail.text = movieEntity.movieGenre
         detailContentBinding.movieLocation.text = movieEntity.movieLocation
-
         activityMovieDetailBinding.toolbarLayout.title = movieEntity.movieName
 
         Glide.with(this)

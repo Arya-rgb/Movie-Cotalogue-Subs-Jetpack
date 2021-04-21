@@ -31,42 +31,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/tvShowDescription"
-            android:layout_width="0dp"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_poster"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/movie_name" />
-        <TextView
-            android:id="@+id/tvShowGenre"
-            android:layout_width="0dp"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_poster"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/movie_name" />
-        <TextView
-            android:id="@+id/tvShowLocation"
-            android:layout_width="0dp"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_poster"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/movie_name" />
-        <TextView
-            android:id="@+id/tvShowTotalEpisode"
-            android:layout_width="0dp"
-            android:visibility="gone"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_poster"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/movie_name" />
 
         <TextView
             android:id="@+id/tvShowName"

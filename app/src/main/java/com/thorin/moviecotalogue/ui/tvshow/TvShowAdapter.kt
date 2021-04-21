@@ -25,10 +25,6 @@ class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
                 tvShowName.text = tvShow.tvShowName
                 tvShowRelease.text = tvShow.tvShowRelease
                 tvShowRate.text = tvShow.tvShowRate
-                tvShowDescription.text = tvShow.tvShowDescription
-                tvShowGenre.text = tvShow.tvShowGenre
-                tvShowLocation.text = tvShow.tvShowLocation
-                tvShowTotalEpisode.text = tvShow.tvShowTotalEpisode
                 Glide.with(itemView.context)
                     .load(tvShow.imagePath)
                     .apply(
