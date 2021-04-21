@@ -167,171 +167,126 @@ object DataHelper {
         tvShow.add(
             TvShowEntity(
                 "T2",
-                "Game of hahay",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Run On",
+                "December 16, 2020",
+                "Rating: 7.6/10 · \u200E1,110 votes",
+                "Run On yang dibintangi oleh Im Si-wan, Shin Se-kyung, Sooyoung SNSD, dan Kang Tae Oh, bercerita tentang orang-orang yang mencoba terhubung satu sama lain dalam bahasa mereka sendiri setelah hidup di dunia yang berbeda dengan kecepatan yang berbeda. Sorotan utamanya adalah kisah cinta antara Ki Seon Gyeom (Im Si-wan) dan Oh Mi Joo (Shin Se-kyung). Ki Seon Gyeom dulunya adalah pelari sprint terkenal untuk tim nasional tapi harus mengakhiri kariernya karena sebuah kasus. Ia kemudian alih profesi sebagai agen olahraga. Sementara, Oh Mi Joo bekerja sebagai penerjemah subtitle film yang sangat bangga dengan pekerjaannya. Pada suatu momen, Oh Mi Joo bertemu dengan Ki Seon Gyeom dan langsung yakin kalau pertemuan mereka adalah awal dari sebuah takdir.",
+                "Drama, Sports, Romance, Life",
+                "Korea Selatan",
+                "16 Episode",
+                "https://cdn-2.tstatic.net/tribunnewswiki/foto/bank/images/drama-run-on.jpg"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T3",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Find Me in Your Memory",
+                "March 18, 2020",
+                "Rating: 7.4/10 · \u200E394 votes",
+                "Kim Dong Wook, sebagai lead actor, emang sudah lebih senior di dunia akting. Saya sih nggak meragukan kemampuan aktingnya. Ahjussi ini sudah membuktikan kualitas aktingnya dengan mencoba berbagai peran di drama dan film. Sejauh ini tak ada yang mengecewakan. Yang bikin saya rada khawatir sebenarnya justru lead actress Find Me in Your Memory, Moon Ga Young. Terakhir, saya melihat aktingnya di Welcome to Waikiki 2. Jujur saja, aktingnya di drama komedi itu nggak terlalu mengesankan. Walau juga nggak bisa dibilang buruk. Yah, standar aja sih. Terlepas dari keraguan tentang chemistry dan kualitas akting aktor-aktornya, Find Me in Your Memory mengangkat isu yang, boleh dibilang, masih jarang dibicarakan publik yaitu hyperthymesia.",
+                "Korean Drama, Drama, Mystery",
+                "Korea Selatan",
+                "16 Episode",
+                "https://asset.kompas.com/crops/Tj7nIE_jdTc3xix20W6TxzRaEb8=/108x568:972x1144/750x500/data/photo/2020/04/06/5e8aa8d01f126.jpg"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T4",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "The 100",
+                "March 19, 2014",
+                "Rating: 7.6/10 · \u200E220,312 votes",
+                "Mengambil masa hampir 100 tahun setelah perang nuklir yang menyapu hampir seluruh kehidupan di Bumi, episode pertama ‘The 100’ dibuka dengan ditegakkannya hukum yang berlaku di Ark – sebuah stasiun luar angkasa yang merupakan gabungan beberapa stasiun luar angkasa dari berbagai negara.  Ark adalah tempat tinggal sementara di luar angkasa bagi penduduk Bumi yang selamat dari bencana radiasi nuklir – sebelum mereka bisa kembali ke Bumi. Hukum yang berlaku di Ark sangat keras.  Sekecil apapun kesalahan, hukumannya adalah mati dengan cara dibuang ke luar angkasa. Hukum dijalankan atas persetujuan kanselir, karena itu kanselir sangat dibenci penduduk Ark. Suatu hari, Ark mengirim 100 tahanan remaja ke Bumi.  Bagi sebagian tahanan, pengiriman ini berarti pembuangan, bagi sebagian yang lain berarti kesempatan. Bagi Ark, pengiriman ini untuk mencari tahu apakah permukaan Bumi sudah bisa dihuni kembali atau tidak – karena kondisi Ark semakin kritis. Dari sinilah semuanya bermula karena Bumi saat itu ternyata tidak hanya indah namun sangat berbahaya, bahkan mematikan.",
+                "Science Fiction Drama",
+                "Vancouver, British Columbia",
+                "100 Episode",
+                "https://i.pinimg.com/originals/29/70/d2/2970d2d96ab208bb04148f30db7d3a7f.jpg"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T5",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Hello, Me!",
+                "February 17, 2021",
+                "Rating: 7.3/10 · \u200E157 votes",
+                "Drama Korea \"Hello, Me!\" menjadi salah satu drama terbaru yang ditayangkan pada bulan Februari 2021. Drama ini memiliki jalan cerita yang menarik tentang Bahn Ha-Ni (Lee Re) yang berumur 17 tahun melakukan perjalanan waktu hingga bertemu dengan Bahn Ha-Ni (Choi Kang-Hee) yang berumur 34 tahun. Drama ini memiliki tema Romance-Comedy dengan tema perjalanan waktu sehingga juga bersaing secara langsung dengan \"Sisyphus, The Myth\" karena memiliki tema serupa (perjalanan waktu) dan waktu penayangan yang sama. Bahn Ha-Ni muda (Lee Re) memiliki personality yang ceria dan bersemangat karena dia sangat populer di sekolahnya. Cukup banyak talenta yang dimilikinya seperti menari dan akting sehingga banyak temannya menyukai Bahn Ha-Ni. Karakter ini sangatlah berbeda dengan Bahn Ha-Ni dewasa (Choi Kang-Hee) yang memiliki perasaan pesimis. Ketika pertama kali bertemu dia bekerja sebagai cumi-cumi di supermarket untuk Joa Confectionary.",
+                "Drama, Romantic Comedy, Fantasy Television",
+                "Korea Selatan",
+                "16 Episode",
+                "https://cdn-2.tstatic.net/jateng/foto/bank/images/hello-me.jpg"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T6",
-                "Game of Thrones",
+                "The Umbrella Academy",
                 "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Rating: 8/10 · \u200E164,791 votes",
+                "Seri komik The Umbrella Academy terdiri dari 6 buku, kemudian sekuelnya “Dallas” juga sepanjang 6 buku, dan paling baru “Hotel Oblivion” dirilis sepanjang 7 buku. Semuanya dipublikasikan oleh Dark Horse Comics. Nah, serial Netflix-nya mengambil jalan cerita seri pertama dari komik. Premis Utama (Non Spoiler) Tanggal 1 oktober 1989, tiba-tiba puluhan wanita di seluruh penjuru dunia melahirkan tanpa mengalami proses kehamilan sebelumnya. Bilyuner Sir Reginald Hargreeves (Colm Feore) buru-buru mengadopsi sebanyak mungkin anak-anak tersebut dan tidak lupa memberi uang pesangon bagi orang tua dengan jumlah yang sangat besar. Reginald kemudian merawat dan membesarkan anak-anak itu untuk menjadi sebuah tim superhero, karena ternyata, semua anak punya kekuatan super. Begitulah The Umbrella Academy terbentuk. Sepintas konsepnya mirip X-Men. ",
+                "Action, Adventure",
+                "Toronto",
+                "20 Episode",
+                "https://beritakini.co/files/images/20201115-the-umbrella-academy.jpg"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T7",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "18 Again",
+                "September 21, 2020",
+                "Rating: 8.2/10 · \u200E723 votes",
+                "Jung Da-jung ( Ha Neul) dan Hong Dae-young (Yoon Sang Hyun), pasangan suami istri yang telah menikah selama lebih dari 18 tahun. Pernikahan mereka kini di ambang perpisahan. Keduanya berada pada titik jenuh. Kehidupan pernikahan ternyata tak seindah yang dibayangkan, dan bukan hal yang mudah untuk dijalani. Apalagi Da Jung dan Dae Young menikah di usia yang sangat muda, 18 tahun. Karena pernikahan itu, banyak impian masa muda yang harus dikorbankan. Da Jung yang dulu bercita-cita jadi penyiar harus menangguhkan pendidikan karena fokus mengurus dua anak kembar mereka. Sementara Dae Young, seorang ace di tim basket sekolah dengan masa depan cerah, juga harus mengubur impian jadi pemain basket professional. Ia harus banting tulang, kerja serabutan untuk memberi makan keluarga. ",
+                "Drama, Coming-of-age Story, Fantasy Television",
+                "Korea Selatan",
+                "16 Episode",
+                "https://cdn.idntimes.com/content-images/post/20201027/nonton-18-again-1-83935f5adcac7c519c243203713e2ca1_600x400.png"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T8",
-                "Game of Thrones",
+                "Let's Go Luna",
                 "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Rating: 7.3/10 · \u200E114 votes",
+                "Leo si wombat, Carmen si kupu-kupu, dan Andy si katak berkeliling dunia untuk belajar tentang budaya bersama teman mereka, Luna the moon.",
+                "Animation, Comedy, Family",
+                "exico City, Mexico. Moscow, Russia. Cairo, Egypt. Beijing, China. London, England. Delhi, India. Sydney, Australia. Tokyo, Japan.",
+                "45 Episode",
+                "https://cms-tc.pbskids.org/luna/featured-video.jpg?mtime=20181108172809"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T9",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "Extracurricular",
+                "April 29, 2020",
+                "Rating: 7.7/10 · \u200E3,046 votes",
+                "Pasalnya premis yang digunakan dalam serial ini terbilang segar. Oh Ji Soo (Kim Dong Hee) adalah seorang anak broken home yang belajar di sekolah swasta ternama di Korea. Ji Soo dikenal sebagai murid teladan dengan nilai di atas rata-rata. Tapi di balik kehidupan remajanya yang terbilang biasa, dia menjadi otak di balik penyedia layanan keamanan untuk pelaku prostitusi. Salah satu pelaku prostitusi yang ia damping adalah Seo Min Hee (Jung Da Bin), teman satu kelasnya. Berasal dari keluarga berada, dia melakukannya agar bisa membelikan barang-barang untuk pacarnya, Gwak Gi Tae (Nam Yoon Soo). Tapi pekerjaan Ji Soo diketahui oleh salah satu anak populer di kelasnya, Bae Gyu Ri (Park Joo Hyun). Dan kehidupan Ji Soo berubah.",
+                "Drama, Crime Film",
+                "Korea Selatan",
+                "10 Episode",
+                "https://i2.wp.com/mariviu.com/wp-content/uploads/2020/05/Extracurricular-netflix-review.jpg?fit=665%2C374&ssl=1"
             )
         )
 
         tvShow.add(
             TvShowEntity(
                 "T10",
-                "Game of Thrones",
-                "April 17, 2011",
-                "Rate Tinggi",
-                """
-                    Game of Throne bisa dibilang sebagai tv series terbaik dalam satu dekade terakhir. Hal itu dirasa tidak berlebihan, karena tv series garapan David Bennioff dan D.B. Weiss sukses merebut perhatian jutaan orang di seluruh dunia. Terbukti serial tv ini sukses mendapatkan rating tertinggi di situs IMDB, yaitu 9,5.
-                    Secara garis besar, tv series ini berkisah tentang perebutan tahta kekuasaan diantara para keluarga. Bahkan mereka sampai mempertaruhkan nyawa untuk mendapatkan tahta yang mereka idam-idamkan.
-                    Jalan cerita yang kompleks, imajinasi cerita liar, dan eksekusi apik membuat tv series yang dibintangi oleh Emilia Clarke, Kit Harrington, Sophie Turner, dan Lena Headey ini pantas menerima predikat tv series terbaik.
-                    Bulan April mendatang, tv series yang diangkat dari novel berjudul A Song of Ice and Fire ini akan mencapai di musim ke-8, yang merupakan musim terakhir dari Game of Thrones. Jadi jika kamu belum menyaksikan tv series ini, kamu bisa marathon Game of Thrones sampai sebelum berkahirnya perjalanan Jon Snow.
-                """.trimIndent(),
-                "Serial, Epic, Tragedy, Action, Fantasy television, Action fiction, Drama, Suspense, Medieval fantasy, Thriller, Adventure, Special Interest",
-                "Northern Ireland Dan Iceland",
-                "73 Episode",
-                "https://s4.bukalapak.com/uploads/content_attachment/9ef1d7fc30e8d7627da004c5/w-744/tv_series_terbaik_-1.jpg"
+                "GTO: Great Teacher Onizuka",
+                "July 7, 1998",
+                " Rating: 8.7/10 · \u200E293,556 votes",
+                "Eikichi Onizuka, 22 tahun, adalah mantan pemimpin geng bermotor yang tidak tahu apa yang dilakukan dalam hidupnya. Dia bertemu seorang gadis yang mengobarkan keinginannya untuk menjadi seorang guru. Onizuka berhasil menjadi guru di kemudian hari, tetapi Onizuka tidaklah sama dengan guru-guru yang sudah ada.",
+                "Action Fiction, Yankee, Comedy",
+                "Jepang",
+                "12 Episode",
+                "https://3.bp.blogspot.com/-mkvWrEW9IRU/WVt5xj-XEJI/AAAAAAAADPQ/AhVPDkhwPUo5-lblRRsvS0BcOpMvprN7ACLcBGAs/s1600/GTO_2014-p02.jpg"
             )
         )
 

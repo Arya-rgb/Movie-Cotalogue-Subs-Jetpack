@@ -72,7 +72,7 @@ class DetailTvShowActivity : AppCompatActivity() {
         Glide.with(this)
             .load(tvShowEntity.imagePath)
             .transform(RoundedCorners(20))
-            .apply(RequestOptions.placeholderOf(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher))
+            .apply(RequestOptions.placeholderOf(R.drawable.ic_loader).error(R.drawable.ic_error))
             .into(detailTvShowBinding.imagePosterDetailTv)
     }
 }

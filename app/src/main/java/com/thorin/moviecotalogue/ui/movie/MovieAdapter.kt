@@ -26,8 +26,8 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                 Glide.with(itemView.context)
                     .load(movie.imagePath)
                     .apply(
-                        RequestOptions.placeholderOf(R.mipmap.ic_launcher)
-                            .error(R.mipmap.ic_launcher_round)
+                        RequestOptions.placeholderOf(R.drawable.ic_loader)
+                            .error(R.drawable.ic_error)
                     )
                     .into(imgPoster)
 

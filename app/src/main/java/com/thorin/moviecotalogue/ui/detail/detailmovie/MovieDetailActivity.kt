@@ -66,7 +66,7 @@ class MovieDetailActivity : AppCompatActivity() {
         Glide.with(this)
             .load(movieEntity.imagePath)
             .transform(RoundedCorners(20))
-            .apply(RequestOptions.placeholderOf(R.mipmap.ic_launcher_round).error(R.mipmap.ic_launcher))
+            .apply(RequestOptions.placeholderOf(R.drawable.ic_loader).error(R.drawable.ic_error))
             .into(activityMovieDetailBinding.imagePosterDetail)
     }
 }
