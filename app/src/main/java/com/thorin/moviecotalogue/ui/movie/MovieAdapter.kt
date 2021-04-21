@@ -1,7 +1,6 @@
 package com.thorin.moviecotalogue.ui.movie
 
 import android.content.Intent
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -50,13 +49,13 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): MovieAdapter.MovieViewHolder {
+    ): MovieViewHolder {
         val itemsMovieBinding =
             ItemsMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MovieViewHolder(itemsMovieBinding)
     }
 
-    override fun onBindViewHolder(holder: MovieAdapter.MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movies = listMovie[position]
         holder.bind(movies)
     }

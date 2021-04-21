@@ -1,7 +1,7 @@
 package com.thorin.moviecotalogue.ui.detail.detailtvshow
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
@@ -33,10 +33,6 @@ class DetailTvShowActivity : AppCompatActivity() {
 
         setSupportActionBar(detailTvShowBinding.toolbar)
 
-        detailTvShowBinding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
 
         val viewModel = ViewModelProvider(
             this,
@@ -48,7 +44,7 @@ class DetailTvShowActivity : AppCompatActivity() {
             val tvShowId = extras.getString(EXTRA_TV)
             if (null != tvShowId) {
                 viewModel.setSelectedTvShow(tvShowId)
-                populateTvShow(viewModel.getTvShow() as TvShowEntity)
+                populateTvShow(viewModel.getTvShow())
             }
         }
 
@@ -71,5 +67,22 @@ class DetailTvShowActivity : AppCompatActivity() {
             .transform(RoundedCorners(20))
             .apply(RequestOptions.placeholderOf(R.drawable.ic_loader).error(R.drawable.ic_error))
             .into(detailTvShowBinding.imagePosterDetailTv)
+
+        detailTvShowBinding.fab.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SEND)
+            val shareBody =
+                "${resources.getString(R.string.share_body1)} ${
+                    contentDetailBinding.tvShowName.text
+                }, ${resources.getString(R.string.share_body2)} ${contentDetailBinding.tvShowRateDetail.text}, ${
+                    resources.getString(
+                        R.string.share_body3
+                    )
+                }"
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_SUBJECT, contentDetailBinding.tvShowName.text)
+            intent.putExtra(Intent.EXTRA_TEXT, shareBody)
+            startActivity(Intent.createChooser(intent, resources.getString(R.string.share_title)))
+        }
+
     }
 }

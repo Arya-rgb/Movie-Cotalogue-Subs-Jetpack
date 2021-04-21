@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.utils.DataHelper
 
-class DetailTvShowViewModel: ViewModel() {
+class DetailTvShowViewModel : ViewModel() {
 
     private lateinit var tvShowId: String
 
@@ -16,7 +16,7 @@ class DetailTvShowViewModel: ViewModel() {
         lateinit var tvShow: TvShowEntity
         val tvShowEntities = DataHelper.generateDataTvShow()
         for (tvShowEntity in tvShowEntities) {
-            if(tvShowId == tvShowEntity.tvShowId) {
+            if (tvShowId == tvShowEntity.tvShowId) {
                 tvShow = tvShowEntity
             }
         }

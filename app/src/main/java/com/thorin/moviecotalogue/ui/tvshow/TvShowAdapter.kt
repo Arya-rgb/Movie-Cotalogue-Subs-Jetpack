@@ -7,10 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.thorin.moviecotalogue.R
-import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.databinding.ItemsTvshowBinding
-import com.thorin.moviecotalogue.ui.detail.detailmovie.MovieDetailActivity
 import com.thorin.moviecotalogue.ui.detail.detailtvshow.DetailTvShowActivity
 
 class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {

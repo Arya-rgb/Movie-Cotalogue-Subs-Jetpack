@@ -5,7 +5,7 @@ import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.utils.DataHelper
 
 
-class DetailMovieViewModel: ViewModel() {
+class DetailMovieViewModel : ViewModel() {
 
     private lateinit var movieId: String
 
@@ -17,7 +17,7 @@ class DetailMovieViewModel: ViewModel() {
         lateinit var movie: MovieEntity
         val movieEntities = DataHelper.generateDataMovie()
         for (movieEntity in movieEntities) {
-            if(movieId == movieEntity.movieId) {
+            if (movieId == movieEntity.movieId) {
                 movie = movieEntity
             }
         }

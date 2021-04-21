@@ -9,8 +9,11 @@ import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.ui.movie.MovieFragment
 import com.thorin.moviecotalogue.ui.tvshow.TvShowFragment
 
-class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager): FragmentPagerAdapter(fm,
-    BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)  {
+class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager) :
+    FragmentPagerAdapter(
+        fm,
+        BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
+    ) {
 
     companion object {
         @StringRes
@@ -26,6 +29,7 @@ class SectionsPagerAdapter(private val mContext: Context, fm: FragmentManager): 
             else -> Fragment()
         }
 
-    override fun getPageTitle(position: Int): CharSequence? = mContext.resources.getString(tabTitles[position])
+    override fun getPageTitle(position: Int): CharSequence =
+        mContext.resources.getString(tabTitles[position])
 
 }

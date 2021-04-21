@@ -11,10 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-    <ImageView
-        android:id="@+id/imageSplash"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageSplash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 </LinearLayout>

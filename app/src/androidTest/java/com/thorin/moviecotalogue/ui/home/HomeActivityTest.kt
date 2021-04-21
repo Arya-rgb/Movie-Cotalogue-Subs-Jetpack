@@ -2,9 +2,7 @@ package com.thorin.moviecotalogue.ui.home
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
@@ -25,6 +23,11 @@ class HomeActivityTest {
     @get:Rule
     var activityRule = ActivityScenarioRule(HomeActivity::class.java)
 
+    /*
+    loadMovie() -> membuka rv movie, check apakah tampil lalu perfom scroll sesuai dengan ukuran dari
+    generateDataMovie()
+     */
+
     @Test
     fun loadMovie() {
         onView(withId(R.id.rv_movie)).check(matches(isDisplayed()))
@@ -35,15 +38,27 @@ class HomeActivityTest {
         )
     }
 
+    /*
+    loadTvShow() -> Menklik teks yang terdapat TV SHOW(untuk pindah fragment)
+    lalu check apakah tampil dan scroll postition to sesuai size dari generateDataTvShow()
+     */
+
     @Test
     fun loadTvShow() {
         onView(withText("TV SHOW")).perform(click())
+        onView(withId(R.id.rv_tvshow)).check(matches(isDisplayed()))
         onView(withId(R.id.rv_tvshow)).perform(
             RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(
                 dataHelperTvShow.size
             )
         )
     }
+
+    /*
+    loadDetailMovie() -> menklik posisi rv pertama lalu mencek apakah tampil
+    - mencek value antara ui dan datahelper apakah sama
+
+     */
 
     @Test
     fun loadDetailMovie() {
@@ -68,6 +83,11 @@ class HomeActivityTest {
         onView(withId(R.id.movieLocation)).check(matches(withText(dataHelperMovie[0].movieLocation)))
 
     }
+
+    /*
+     loadDetailTvShow() -> pindah fragment ke TV SHOW dengan menklik teks yang terdapat TV SHOW
+    -mencek antara value ui dan datahelper apakah sama
+     */
 
     @Test
     fun loadDetailTvShow() {

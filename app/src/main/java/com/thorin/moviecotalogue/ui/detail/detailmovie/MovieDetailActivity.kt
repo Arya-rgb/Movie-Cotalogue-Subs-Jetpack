@@ -1,9 +1,7 @@
 package com.thorin.moviecotalogue.ui.detail.detailmovie
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
@@ -32,11 +30,6 @@ class MovieDetailActivity : AppCompatActivity() {
 
         setSupportActionBar(activityMovieDetailBinding.toolbar)
 
-        activityMovieDetailBinding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-
         val viewModel = ViewModelProvider(
             this,
             ViewModelProvider.NewInstanceFactory()
@@ -47,7 +40,7 @@ class MovieDetailActivity : AppCompatActivity() {
             val movieId = extras.getString(EXTRA_MOVIE)
             if (null != movieId) {
                 viewModel.setSelectedMovie(movieId)
-                populateMovie(viewModel.getMovie() as MovieEntity)
+                populateMovie(viewModel.getMovie())
             }
         }
 
@@ -67,5 +60,22 @@ class MovieDetailActivity : AppCompatActivity() {
             .transform(RoundedCorners(20))
             .apply(RequestOptions.placeholderOf(R.drawable.ic_loader).error(R.drawable.ic_error))
             .into(activityMovieDetailBinding.imagePosterDetail)
+
+        activityMovieDetailBinding.fab.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SEND)
+            val shareBody =
+                "${resources.getString(R.string.share_body1)} ${
+                    detailContentBinding.movieName.text
+                }, ${resources.getString(R.string.share_body2)} ${detailContentBinding.movieRateDetail.text}, ${
+                    resources.getString(
+                        R.string.share_body3
+                    )
+                }"
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_SUBJECT, detailContentBinding.movieName.text)
+            intent.putExtra(Intent.EXTRA_TEXT, shareBody)
+            startActivity(Intent.createChooser(intent, resources.getString(R.string.share_title)))
+        }
+
     }
 }

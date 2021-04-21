@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.utils.DataHelper
 
-class MovieViewModel: ViewModel() {
+class MovieViewModel : ViewModel() {
 
     fun getMovie(): List<MovieEntity> = DataHelper.generateDataMovie()
 

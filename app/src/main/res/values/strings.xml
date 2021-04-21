@@ -111,4 +111,11 @@
     <string name="genre_tv_show">Genre Tv Show</string>
     <string name="lokasi_shooting_tv_show">Lokasi Shooting Tv Show</string>
     <string name="total_episode">Total Episode</string>
+    <string name="floating_action_button_untuk_share">Floating action button untuk share</string>
+    <string name="gambar_movie_untuk_layout_detail">Gambar Movie Untuk Layout Detail</string>
+    <string name="share_body1">Hai, Aku mau merekomendasikan film</string>
+    <string name="share_body2">Rating di IMB nya sebesar</string>
+    <string name="share_body3">Tunggu apa lagi, ayo nonton sekarang !</string>
+    <string name="share_title">Mau Share Ke Mana Nih ?</string>
+    <string name="foto_untuk_movie_detail">Foto untuk movie detail</string>
 </resources>

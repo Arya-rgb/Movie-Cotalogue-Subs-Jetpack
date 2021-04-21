@@ -2,7 +2,6 @@ package com.thorin.moviecotalogue.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
