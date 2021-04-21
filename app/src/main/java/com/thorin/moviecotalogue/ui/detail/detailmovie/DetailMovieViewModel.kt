@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.utils.DataHelper
 
+
 class DetailMovieViewModel: ViewModel() {
 
     private lateinit var movieId: String

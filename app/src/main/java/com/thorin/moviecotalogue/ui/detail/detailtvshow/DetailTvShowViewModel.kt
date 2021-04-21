@@ -8,7 +8,7 @@ class DetailTvShowViewModel: ViewModel() {
 
     private lateinit var tvShowId: String
 
-    fun setSelectedMovie(tvShowId: String) {
+    fun setSelectedTvShow(tvShowId: String) {
         this.tvShowId = tvShowId
     }
 

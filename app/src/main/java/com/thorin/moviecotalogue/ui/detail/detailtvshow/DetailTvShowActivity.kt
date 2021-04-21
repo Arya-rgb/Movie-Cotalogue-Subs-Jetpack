@@ -1,8 +1,6 @@
 package com.thorin.moviecotalogue.ui.detail.detailtvshow
 
 import android.os.Bundle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -12,7 +10,6 @@ import com.bumptech.glide.request.RequestOptions
 import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.databinding.ActivityDetailTvShowBinding
-import com.thorin.moviecotalogue.databinding.ActivityMovieDetailBinding
 import com.thorin.moviecotalogue.databinding.ContentDetialTvshowBinding
 
 class DetailTvShowActivity : AppCompatActivity() {
@@ -50,7 +47,7 @@ class DetailTvShowActivity : AppCompatActivity() {
         if (null != extras) {
             val tvShowId = extras.getString(EXTRA_TV)
             if (null != tvShowId) {
-                viewModel.setSelectedMovie(tvShowId)
+                viewModel.setSelectedTvShow(tvShowId)
                 populateTvShow(viewModel.getTvShow() as TvShowEntity)
             }
         }
