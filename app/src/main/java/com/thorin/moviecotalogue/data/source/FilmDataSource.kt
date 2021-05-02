@@ -9,4 +9,8 @@ interface FilmDataSource {
 
     fun getAllTvShow(): List<TvShowEntity>
 
+    fun getMoviesDetail(movieId: String): MovieEntity
+
+    fun getTvShowDetail(tvShowId: String): TvShowEntity
+
 }
