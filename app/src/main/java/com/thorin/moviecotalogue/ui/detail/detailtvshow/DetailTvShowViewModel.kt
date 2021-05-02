@@ -2,9 +2,10 @@ package com.thorin.moviecotalogue.ui.detail.detailtvshow
 
 import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.TvShowEntity
+import com.thorin.moviecotalogue.data.source.FilmRepository
 import com.thorin.moviecotalogue.utils.DataHelper
 
-class DetailTvShowViewModel : ViewModel() {
+class DetailTvShowViewModel(private val filmRepository: FilmRepository) : ViewModel() {
 
     private lateinit var tvShowId: String
 
@@ -12,15 +13,6 @@ class DetailTvShowViewModel : ViewModel() {
         this.tvShowId = tvShowId
     }
 
-    fun getTvShow(): TvShowEntity {
-        lateinit var tvShow: TvShowEntity
-        val tvShowEntities = DataHelper.generateDataTvShow()
-        for (tvShowEntity in tvShowEntities) {
-            if (tvShowId == tvShowEntity.tvShowId) {
-                tvShow = tvShowEntity
-            }
-        }
-        return tvShow
-    }
+    fun getTvShow(): TvShowEntity = filmRepository.getTvShowDetail(tvShowId)
 
 }
