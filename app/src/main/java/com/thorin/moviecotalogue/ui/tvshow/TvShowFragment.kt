@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.thorin.moviecotalogue.databinding.FragmentTvShowBinding
+import com.thorin.moviecotalogue.viewmodel.ViewModelFactory
 
 class TvShowFragment : Fragment() {
 
@@ -28,7 +29,7 @@ class TvShowFragment : Fragment() {
         if (null != activity) {
             val viewModel = ViewModelProvider(
                 this,
-                ViewModelProvider.NewInstanceFactory()
+                ViewModelFactory.getInstance(requireActivity())
             )[TvShowViewModel::class.java]
 
             val tvShow = viewModel.getTvShow()

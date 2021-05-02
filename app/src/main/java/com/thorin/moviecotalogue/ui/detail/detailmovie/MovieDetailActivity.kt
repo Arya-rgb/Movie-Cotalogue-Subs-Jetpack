@@ -11,6 +11,7 @@ import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.databinding.ActivityMovieDetailBinding
 import com.thorin.moviecotalogue.databinding.ContentDetailMovieBinding
+import com.thorin.moviecotalogue.viewmodel.ViewModelFactory
 
 class MovieDetailActivity : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ class MovieDetailActivity : AppCompatActivity() {
 
         val viewModel = ViewModelProvider(
             this,
-            ViewModelProvider.NewInstanceFactory()
+            ViewModelFactory.getInstance(this)
         )[DetailMovieViewModel::class.java]
 
         val extras = intent.extras

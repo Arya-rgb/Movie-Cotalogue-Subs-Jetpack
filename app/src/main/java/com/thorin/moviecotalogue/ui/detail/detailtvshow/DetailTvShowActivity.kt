@@ -11,6 +11,7 @@ import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.databinding.ActivityDetailTvShowBinding
 import com.thorin.moviecotalogue.databinding.ContentDetialTvshowBinding
+import com.thorin.moviecotalogue.viewmodel.ViewModelFactory
 
 class DetailTvShowActivity : AppCompatActivity() {
 
@@ -36,7 +37,7 @@ class DetailTvShowActivity : AppCompatActivity() {
 
         val viewModel = ViewModelProvider(
             this,
-            ViewModelProvider.NewInstanceFactory()
+            ViewModelFactory.getInstance(this)
         )[DetailTvShowViewModel::class.java]
 
         val extras = intent.extras
