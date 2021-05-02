@@ -251,7 +251,7 @@ object DataHelper {
                 "Rating: 7.3/10 · \u200E114 votes",
                 "Leo si wombat, Carmen si kupu-kupu, dan Andy si katak berkeliling dunia untuk belajar tentang budaya bersama teman mereka, Luna the moon.",
                 "Animation, Comedy, Family",
-                "exico City, Mexico. Moscow, Russia. Cairo, Egypt. Beijing, China. London, England. Delhi, India. Sydney, Australia. Tokyo, Japan.",
+                "Mexico City, Mexico. Moscow, Russia. Cairo, Egypt. Beijing, China. London, England. Delhi, India. Sydney, Australia. Tokyo, Japan.",
                 "45 Episode",
                 "https://cms-tc.pbskids.org/luna/featured-video.jpg?mtime=20181108172809"
             )
@@ -276,7 +276,7 @@ object DataHelper {
                 "T10",
                 "GTO: Great Teacher Onizuka",
                 "July 7, 1998",
-                " Rating: 8.7/10 · \u200E293,556 votes",
+                "Rating: 8.7/10 · \u200E293,556 votes",
                 "Eikichi Onizuka, 22 tahun, adalah mantan pemimpin geng bermotor yang tidak tahu apa yang dilakukan dalam hidupnya. Dia bertemu seorang gadis yang mengobarkan keinginannya untuk menjadi seorang guru. Onizuka berhasil menjadi guru di kemudian hari, tetapi Onizuka tidaklah sama dengan guru-guru yang sudah ada.",
                 "Action Fiction, Yankee, Comedy",
                 "Jepang",
