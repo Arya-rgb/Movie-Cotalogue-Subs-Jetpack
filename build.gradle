@@ -26,6 +26,8 @@ ext {
     extJunitVersion = '1.1.2'
     espressoVersion = '3.3.0'
     glideVersion = '4.12.0'
+    mockitoVersion = '3.6.0'
+
 
 }
 
