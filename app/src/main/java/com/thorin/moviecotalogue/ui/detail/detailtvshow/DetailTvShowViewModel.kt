@@ -1,5 +1,6 @@
 package com.thorin.moviecotalogue.ui.detail.detailtvshow
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.TvShowEntity
 import com.thorin.moviecotalogue.data.source.FilmRepository
@@ -13,6 +14,6 @@ class DetailTvShowViewModel(private val filmRepository: FilmRepository) : ViewMo
         this.tvShowId = tvShowId
     }
 
-    fun getTvShow(): TvShowEntity = filmRepository.getTvShowDetail(tvShowId)
+    fun getTvShow(): LiveData<TvShowEntity> = filmRepository.getTvShowDetail(tvShowId)
 
 }

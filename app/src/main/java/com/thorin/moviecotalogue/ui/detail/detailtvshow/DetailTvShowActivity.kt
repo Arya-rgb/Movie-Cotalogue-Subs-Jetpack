@@ -2,6 +2,7 @@ package com.thorin.moviecotalogue.ui.detail.detailtvshow
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
@@ -28,8 +29,6 @@ class DetailTvShowActivity : AppCompatActivity() {
 
         detailTvShowBinding = ActivityDetailTvShowBinding.inflate(layoutInflater)
         setContentView(detailTvShowBinding.root)
-
-
         contentDetailBinding = detailTvShowBinding.contentTvShow
 
         setSupportActionBar(detailTvShowBinding.toolbar)
@@ -44,8 +43,15 @@ class DetailTvShowActivity : AppCompatActivity() {
         if (null != extras) {
             val tvShowId = extras.getString(EXTRA_TV)
             if (null != tvShowId) {
+                detailTvShowBinding.progressBar2.visibility = View.VISIBLE
+                detailTvShowBinding.contentForTv.visibility = View.INVISIBLE
+
                 viewModel.setSelectedTvShow(tvShowId)
-                populateTvShow(viewModel.getTvShow())
+                viewModel.getTvShow().observe(this, { tvShow ->
+                    detailTvShowBinding.progressBar2.visibility = View.GONE
+                    detailTvShowBinding.contentForTv.visibility = View.VISIBLE
+                    populateTvShow(tvShow)
+                })
             }
         }
 

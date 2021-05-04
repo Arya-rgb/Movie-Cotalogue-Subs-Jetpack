@@ -1,5 +1,6 @@
 package com.thorin.moviecotalogue.ui.detail.detailmovie
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.data.source.FilmRepository
@@ -13,5 +14,5 @@ class DetailMovieViewModel(private val filmRepository: FilmRepository) : ViewMod
     fun setSelectedMovie(movieId: String) {
         this.movieId = movieId
     }
-    fun getMovie(): MovieEntity = filmRepository.getMoviesDetail(movieId)
+    fun getMovie(): LiveData<MovieEntity> = filmRepository.getMoviesDetail(movieId)
 }

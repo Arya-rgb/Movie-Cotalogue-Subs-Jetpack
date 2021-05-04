@@ -2,6 +2,7 @@ package com.thorin.moviecotalogue.ui.detail.detailmovie
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
@@ -31,6 +32,8 @@ class MovieDetailActivity : AppCompatActivity() {
 
         setSupportActionBar(activityMovieDetailBinding.toolbar)
 
+
+
         val viewModel = ViewModelProvider(
             this,
             ViewModelFactory.getInstance(this)
@@ -40,8 +43,14 @@ class MovieDetailActivity : AppCompatActivity() {
         if (null != extras) {
             val movieId = extras.getString(EXTRA_MOVIE)
             if (null != movieId) {
+                activityMovieDetailBinding.progressBar2.visibility = View.VISIBLE
+                activityMovieDetailBinding.contentForMovie.visibility = View.INVISIBLE
                 viewModel.setSelectedMovie(movieId)
-                populateMovie(viewModel.getMovie())
+                viewModel.getMovie().observe(this, { movie ->
+                    activityMovieDetailBinding.progressBar2.visibility = View.GONE
+                    activityMovieDetailBinding.contentForMovie.visibility = View.VISIBLE
+                    populateMovie(movie)
+                })
             }
         }
 

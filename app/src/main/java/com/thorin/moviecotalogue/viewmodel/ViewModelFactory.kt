@@ -26,18 +26,18 @@ class ViewModelFactory(private val mFilmRepository: FilmRepository): ViewModelPr
   }
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        when {
+        return when {
             modelClass.isAssignableFrom(MovieViewModel::class.java) -> {
-                return MovieViewModel(mFilmRepository) as T
+                MovieViewModel(mFilmRepository) as T
             }
             modelClass.isAssignableFrom(TvShowViewModel::class.java) -> {
-                return TvShowViewModel(mFilmRepository) as T
+                TvShowViewModel(mFilmRepository) as T
             }
             modelClass.isAssignableFrom(DetailMovieViewModel::class.java) -> {
-                return DetailMovieViewModel(mFilmRepository) as T
+                DetailMovieViewModel(mFilmRepository) as T
             }
             modelClass.isAssignableFrom(DetailTvShowViewModel::class.java) -> {
-                return DetailTvShowViewModel(mFilmRepository) as T
+                DetailTvShowViewModel(mFilmRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel Class: " + modelClass.name)
         }
