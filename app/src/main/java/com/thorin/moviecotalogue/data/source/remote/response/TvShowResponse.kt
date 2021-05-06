@@ -14,4 +14,4 @@ data class TvShowResponse(
     var tvShowLocation: String,
     var tvShowTotalEpisode: String,
     var imagePath: String
-): Parcelable
+) : Parcelable

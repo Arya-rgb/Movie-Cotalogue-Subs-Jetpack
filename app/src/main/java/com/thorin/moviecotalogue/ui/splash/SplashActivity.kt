@@ -1,12 +1,14 @@
 package com.thorin.moviecotalogue.ui.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.bumptech.glide.Glide
-import com.thorin.moviecotalogue.R
+import androidx.appcompat.app.AppCompatActivity
+
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
+
 import com.thorin.moviecotalogue.databinding.ActivitySplashBinding
 import com.thorin.moviecotalogue.ui.home.HomeActivity
 
@@ -21,9 +23,13 @@ class SplashActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        Glide.with(this)
-            .load(R.drawable.ic_splash_screen)
-            .into(splashActivityBinding.imageSplash)
+        YoYo.with(Techniques.Bounce)
+            .duration(7000)
+            .playOn(splashActivityBinding.logo)
+
+        YoYo.with(Techniques.FadeInUp)
+            .duration(5000) // Time it for app name to fade in up
+            .playOn(splashActivityBinding.appname)
 
         Handler(Looper.getMainLooper()).postDelayed({
             val myIntent = Intent(this, HomeActivity::class.java)

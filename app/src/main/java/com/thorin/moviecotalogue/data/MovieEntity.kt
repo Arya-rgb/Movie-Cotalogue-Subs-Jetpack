@@ -5,7 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 
 @Parcelize
-class MovieEntity (
+class MovieEntity(
     var movieId: String,
     var movieName: String,
     var movieRelease: String,
@@ -14,4 +14,4 @@ class MovieEntity (
     var movieGenre: String,
     var movieLocation: String,
     var imagePath: String
-    ) : Parcelable
+) : Parcelable

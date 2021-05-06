@@ -1,7 +1,6 @@
 package com.thorin.moviecotalogue.utils
 
 import android.content.Context
-import android.util.Log
 import com.thorin.moviecotalogue.data.source.remote.response.MovieResponse
 import com.thorin.moviecotalogue.data.source.remote.response.TvShowResponse
 import org.json.JSONException

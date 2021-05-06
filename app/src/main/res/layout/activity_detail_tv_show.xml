@@ -49,11 +49,12 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".ui.detail.detailtvshow.DetailTvShowActivity">
 
-    <include
-        android:id="@+id/content_tv_show"
-        layout="@layout/content_detial_tvshow" />
+        <include
+            android:id="@+id/content_tv_show"
+            layout="@layout/content_detial_tvshow" />
 
     </androidx.core.widget.NestedScrollView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -64,12 +65,15 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_menu_share" />
 
-    <ProgressBar
+
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical" />
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        app:lottie_fileName="splash.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

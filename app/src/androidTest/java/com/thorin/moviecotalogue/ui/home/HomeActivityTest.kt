@@ -1,16 +1,19 @@
 package com.thorin.moviecotalogue.ui.home
 
 import androidx.recyclerview.widget.RecyclerView
+import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
-import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.utils.DataHelper
-import org.junit.Rule
+import com.thorin.moviecotalogue.utils.EspressoIdlingResource
+import org.junit.After
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -20,8 +23,16 @@ class HomeActivityTest {
     private val dataHelperMovie = DataHelper.generateDataMovie()
     private val dataHelperTvShow = DataHelper.generateDataTvShow()
 
-    @get:Rule
-    var activityRule = ActivityScenarioRule(HomeActivity::class.java)
+    @Before
+    fun setUp() {
+        ActivityScenario.launch(HomeActivity::class.java)
+        IdlingRegistry.getInstance().register(EspressoIdlingResource.idlingResource)
+    }
+
+    @After
+    fun tearDown() {
+        IdlingRegistry.getInstance().unregister(EspressoIdlingResource.idlingResource)
+    }
 
     /*
     loadMovie() -> membuka rv movie, check apakah tampil lalu perfom scroll sesuai dengan ukuran dari

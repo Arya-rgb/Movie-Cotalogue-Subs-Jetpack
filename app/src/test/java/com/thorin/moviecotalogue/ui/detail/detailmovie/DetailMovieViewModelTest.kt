@@ -1,12 +1,16 @@
 package com.thorin.moviecotalogue.ui.detail.detailmovie
 
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import com.thorin.moviecotalogue.data.MovieEntity
 import com.thorin.moviecotalogue.data.source.FilmRepository
 import com.thorin.moviecotalogue.utils.DataHelper
-import org.junit.Test
-
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Before
+import org.junit.Rule
+import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.Mockito.`when`
@@ -19,8 +23,14 @@ class DetailMovieViewModelTest {
     private val dataHelper = DataHelper.generateDataMovie()[0]
     private val movieId = dataHelper.movieId
 
+    @get:Rule
+    var instantTaskExecutorRule = InstantTaskExecutorRule()
+
     @Mock
     private lateinit var filmRepository: FilmRepository
+
+    @Mock
+    private lateinit var movieObserver: Observer<MovieEntity>
 
     @Before
     fun setUp() {
@@ -30,8 +40,11 @@ class DetailMovieViewModelTest {
 
     @Test
     fun getMovie() {
-        `when`(filmRepository.getMoviesDetail(movieId)).thenReturn(dataHelper)
-        val movieEntity = viewModel.getMovie()
+        val movie = MutableLiveData<MovieEntity>()
+        movie.value = dataHelper
+
+        `when`(filmRepository.getMoviesDetail(movieId)).thenReturn(movie)
+        val movieEntity = viewModel.getMovie().value as MovieEntity
         verify(filmRepository).getMoviesDetail(movieId)
         assertNotNull(movieEntity)
         assertEquals(dataHelper.movieId, movieEntity.movieId)
@@ -42,5 +55,8 @@ class DetailMovieViewModelTest {
         assertEquals(dataHelper.movieGenre, movieEntity.movieGenre)
         assertEquals(dataHelper.movieLocation, movieEntity.movieLocation)
         assertEquals(dataHelper.imagePath, movieEntity.imagePath)
+
+        viewModel.getMovie().observeForever(movieObserver)
+        verify(movieObserver).onChanged(dataHelper)
     }
 }

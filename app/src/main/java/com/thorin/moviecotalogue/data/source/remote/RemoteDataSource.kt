@@ -3,6 +3,7 @@ package com.thorin.moviecotalogue.data.source.remote
 import android.os.Looper
 import com.thorin.moviecotalogue.data.source.remote.response.MovieResponse
 import com.thorin.moviecotalogue.data.source.remote.response.TvShowResponse
+import com.thorin.moviecotalogue.utils.EspressoIdlingResource
 import com.thorin.moviecotalogue.utils.JsonHelper
 
 class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
@@ -10,7 +11,7 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
     private val handler = android.os.Handler(Looper.getMainLooper())
 
     companion object {
-        private const val SERVICE_LATENCY_IN_MILLIS: Long = 2000
+        private const val SERVICE_LATENCY_IN_MILLIS: Long = 3000
 
         @Volatile
         private var instance: RemoteDataSource? = null
@@ -21,17 +22,19 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
             }
     }
 
-
-
     fun getAllMovies(callback: LoadMoviesCallback) {
+        EspressoIdlingResource.increment()
         handler.postDelayed({
             callback.onAllMovieReceived(jsonHelper.loadMovies())
+            EspressoIdlingResource.decrement()
         }, SERVICE_LATENCY_IN_MILLIS)
     }
 
     fun getAllTvShow(callback: LoadTvShowCallback) {
+        EspressoIdlingResource.increment()
         handler.postDelayed({
             callback.onAllTvShowReceived(jsonHelper.loadTvShow())
+            EspressoIdlingResource.decrement()
         }, SERVICE_LATENCY_IN_MILLIS)
     }
 

@@ -33,7 +33,6 @@ class MovieDetailActivity : AppCompatActivity() {
         setSupportActionBar(activityMovieDetailBinding.toolbar)
 
 
-
         val viewModel = ViewModelProvider(
             this,
             ViewModelFactory.getInstance(this)

@@ -10,21 +10,22 @@ import com.thorin.moviecotalogue.ui.detail.detailtvshow.DetailTvShowViewModel
 import com.thorin.moviecotalogue.ui.movie.MovieViewModel
 import com.thorin.moviecotalogue.ui.tvshow.TvShowViewModel
 
-@Suppress("UNCHECKED_CAST")
-class ViewModelFactory(private val mFilmRepository: FilmRepository): ViewModelProvider.NewInstanceFactory() {
+class ViewModelFactory(private val mFilmRepository: FilmRepository) :
+    ViewModelProvider.NewInstanceFactory() {
 
-  companion object{
-      @Volatile
-      private var instance: ViewModelFactory? = null
+    companion object {
+        @Volatile
+        private var instance: ViewModelFactory? = null
 
-      fun getInstance(context: Context): ViewModelFactory =
-          instance ?: synchronized(this) {
-              instance ?: ViewModelFactory(Injection.provideRepository(context)).apply {
-                  instance = this
-              }
-          }
-  }
+        fun getInstance(context: Context): ViewModelFactory =
+            instance ?: synchronized(this) {
+                instance ?: ViewModelFactory(Injection.provideRepository(context)).apply {
+                    instance = this
+                }
+            }
+    }
 
+    @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
             modelClass.isAssignableFrom(MovieViewModel::class.java) -> {
@@ -41,7 +42,5 @@ class ViewModelFactory(private val mFilmRepository: FilmRepository): ViewModelPr
             }
             else -> throw Throwable("Unknown ViewModel Class: " + modelClass.name)
         }
-
     }
-
 }
