@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieCotalogue">
         <activity
+            android:name=".ui.home.MenuActivity"
+            android:label="@string/title_activity_menu">
+
+        </activity>
+        <activity
             android:name=".ui.detail.detailtvshow.DetailTvShowActivity"
             android:label="@string/title_activity_detail_tv_show"
             android:theme="@style/Theme.MovieCotalogue.NoActionBar" />

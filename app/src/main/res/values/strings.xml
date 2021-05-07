@@ -119,4 +119,8 @@
     <string name="share_title">Mau Share Ke Mana Nih ?</string>
     <string name="foto_untuk_movie_detail">Foto untuk movie detail</string>
     <string name="desc_splash_image">Image for splash Screen</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="Favorite">Favorite</string>
+    <string name="Settings">Setting</string>
 </resources>

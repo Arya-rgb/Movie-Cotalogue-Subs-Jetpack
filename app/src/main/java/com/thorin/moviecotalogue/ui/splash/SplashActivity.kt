@@ -11,6 +11,7 @@ import com.daimajia.androidanimations.library.YoYo
 
 import com.thorin.moviecotalogue.databinding.ActivitySplashBinding
 import com.thorin.moviecotalogue.ui.home.HomeActivity
+import com.thorin.moviecotalogue.ui.home.MenuActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -32,7 +33,7 @@ class SplashActivity : AppCompatActivity() {
             .playOn(splashActivityBinding.appname)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val myIntent = Intent(this, HomeActivity::class.java)
+            val myIntent = Intent(this, MenuActivity::class.java)
             startActivity(myIntent)
             overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
             finish()
