@@ -25,7 +25,7 @@ class HomeActivityTest {
 
     @Before
     fun setUp() {
-        ActivityScenario.launch(HomeActivity::class.java)
+        ActivityScenario.launch(MenuActivity::class.java)
         IdlingRegistry.getInstance().register(EspressoIdlingResource.idlingResource)
     }
 
@@ -72,13 +72,14 @@ class HomeActivityTest {
      */
 
     @Test
-    fun loadDetailMovie() {
+    fun loadDetailMovieAndTestFavorite() {
         onView(withId(R.id.rv_movie)).perform(
             RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
                 0,
                 click()
             )
         )
+        onView(withId(R.id.fab_favorite)).perform(click())
         onView(withId(R.id.image_poster_detail)).check(matches(isDisplayed()))
         onView(withId(R.id.movieName)).check(matches(isDisplayed()))
         onView(withId(R.id.movieName)).check(matches(withText(dataHelperMovie[0].movieName)))
@@ -101,7 +102,7 @@ class HomeActivityTest {
      */
 
     @Test
-    fun loadDetailTvShow() {
+    fun loadDetailTvShowAndTestFavorite() {
         onView(withText("TV SHOW")).perform(click())
         onView(withId(R.id.rv_tvshow)).perform(
             RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
@@ -109,6 +110,7 @@ class HomeActivityTest {
                 click()
             )
         )
+        onView(withId(R.id.fab_favorite)).perform(click())
         onView(withId(R.id.image_poster_detail_tv)).check(matches(isDisplayed()))
         onView(withId(R.id.tvShowName)).check(matches(isDisplayed()))
         onView(withId(R.id.tvShowName)).check(matches(withText(dataHelperTvShow[0].tvShowName)))
@@ -126,4 +128,24 @@ class HomeActivityTest {
         onView(withId(R.id.tvShowTotalEpisodeDetail)).check(matches(withText(dataHelperTvShow[0].tvShowTotalEpisode)))
     }
 
+    @Test
+    fun loadFavoriteListMovie() {
+        onView(withId(R.id.navigation_favorite)).perform(click())
+        onView(withText("MOVIE")).perform(click())
+        onView(withId(R.id.rv_movie)).check(matches(isDisplayed()))
+        RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+            0,
+            click()
+        )
+    }
+
+    fun loadFavoriteListTvShow() {
+        onView(withId(R.id.navigation_favorite)).perform(click())
+        onView(withText("TV SHOW")).perform(click())
+        onView(withId(R.id.rv_tvshow)).check(matches(isDisplayed()))
+        RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(
+            0,
+            click()
+        )
+    }
 }

@@ -10,7 +10,6 @@ import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
 
 import com.thorin.moviecotalogue.databinding.ActivitySplashBinding
-import com.thorin.moviecotalogue.ui.home.HomeActivity
 import com.thorin.moviecotalogue.ui.home.MenuActivity
 
 class SplashActivity : AppCompatActivity() {

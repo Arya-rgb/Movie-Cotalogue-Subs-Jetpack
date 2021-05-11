@@ -65,6 +65,16 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_menu_share" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/floating_action_button_untuk_share"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|center"
+        tools:srcCompat="@drawable/ic_baseline_unfavorite_border_24" />
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/progressBar2"

@@ -1,6 +1,9 @@
 package com.thorin.moviecotalogue.data.source.remote
 
 import android.os.Looper
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import com.thorin.moviecotalogue.data.source.remote.response.ApiResponse
 import com.thorin.moviecotalogue.data.source.remote.response.MovieResponse
 import com.thorin.moviecotalogue.data.source.remote.response.TvShowResponse
 import com.thorin.moviecotalogue.utils.EspressoIdlingResource
@@ -11,7 +14,7 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
     private val handler = android.os.Handler(Looper.getMainLooper())
 
     companion object {
-        private const val SERVICE_LATENCY_IN_MILLIS: Long = 3000
+        private const val SERVICE_LATENCY_IN_MILLIS: Long = 2000
 
         @Volatile
         private var instance: RemoteDataSource? = null
@@ -22,29 +25,24 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
             }
     }
 
-    fun getAllMovies(callback: LoadMoviesCallback) {
+    fun getAllMovies() : LiveData<ApiResponse<List<MovieResponse>>> {
         EspressoIdlingResource.increment()
+        val resultMovie = MutableLiveData<ApiResponse<List<MovieResponse>>>()
         handler.postDelayed({
-            callback.onAllMovieReceived(jsonHelper.loadMovies())
+            resultMovie.value = ApiResponse.success(jsonHelper.loadMovies())
             EspressoIdlingResource.decrement()
         }, SERVICE_LATENCY_IN_MILLIS)
+        return resultMovie
     }
 
-    fun getAllTvShow(callback: LoadTvShowCallback) {
+    fun getAllTvShow() : LiveData<ApiResponse<List<TvShowResponse>>> {
         EspressoIdlingResource.increment()
+        val resultTvShow = MutableLiveData<ApiResponse<List<TvShowResponse>>>()
         handler.postDelayed({
-            callback.onAllTvShowReceived(jsonHelper.loadTvShow())
+            resultTvShow.value = ApiResponse.success(jsonHelper.loadTvShow())
             EspressoIdlingResource.decrement()
         }, SERVICE_LATENCY_IN_MILLIS)
+        return resultTvShow
     }
-
-    interface LoadMoviesCallback {
-        fun onAllMovieReceived(movieResponse: List<MovieResponse>)
-    }
-
-    interface LoadTvShowCallback {
-        fun onAllTvShowReceived(tvShowResponse: List<TvShowResponse>)
-    }
-
 
 }

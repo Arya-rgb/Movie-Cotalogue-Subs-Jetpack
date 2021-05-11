@@ -1,4 +1,4 @@
-package com.thorin.moviecotalogue.ui.home
+package com.thorin.moviecotalogue.ui.favorite
 
 import android.content.Context
 import androidx.annotation.StringRes
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.thorin.moviecotalogue.R
-import com.thorin.moviecotalogue.ui.movie.MovieFragmentFavorite
-import com.thorin.moviecotalogue.ui.tvshow.TvShowFragmentFavorite
+import com.thorin.moviecotalogue.ui.favorite.movie.MovieFragmentFavorite
+import com.thorin.moviecotalogue.ui.favorite.tvshow.TvShowFragmentFavorite
 
 class SectionsPagerAdapterFavorite(private val mContext: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
@@ -20,11 +20,12 @@ class SectionsPagerAdapterFavorite(private val mContext: Context, fm: FragmentMa
     override fun getCount(): Int = 2
 
     override fun getItem(position: Int): Fragment =
-        when(position) {
+        when (position) {
             0 -> MovieFragmentFavorite()
             1 -> TvShowFragmentFavorite()
             else -> Fragment()
         }
+
     override fun getPageTitle(position: Int): CharSequence =
         mContext.resources.getString(tabTitles[position])
 }

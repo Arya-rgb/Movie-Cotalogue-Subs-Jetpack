@@ -1,30 +1,23 @@
-package com.thorin.moviecotalogue.ui.home
+package com.thorin.moviecotalogue.ui.favorite
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.thorin.moviecotalogue.R
 import com.thorin.moviecotalogue.databinding.FragmentFavoriteBinding
-import com.thorin.moviecotalogue.databinding.FragmentHomeBinding
-import com.thorin.moviecotalogue.ui.home.ui.dashboard.DashboardViewModel
 
 
 class FavoriteFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
     private lateinit var fragmentFavoriteBinding: FragmentFavoriteBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         fragmentFavoriteBinding = FragmentFavoriteBinding.inflate(layoutInflater, container, false)
         return fragmentFavoriteBinding.root
     }

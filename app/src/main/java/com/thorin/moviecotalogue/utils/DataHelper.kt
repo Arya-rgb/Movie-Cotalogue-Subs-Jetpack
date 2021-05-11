@@ -7,7 +7,7 @@ import com.thorin.moviecotalogue.data.source.remote.response.TvShowResponse
 
 object DataHelper {
 
-    fun generateDataMovie(): ArrayList<MovieEntity> {
+    fun generateDataMovie(): List<MovieEntity> {
         val movie = ArrayList<MovieEntity>()
 
         movie.add(
@@ -144,7 +144,7 @@ object DataHelper {
 
     }
 
-    fun generateDataTvShow(): List<TvShowEntity> {
+    fun generateDataTvShow(): ArrayList<TvShowEntity> {
         val tvShow = ArrayList<TvShowEntity>()
 
         tvShow.add(
@@ -570,5 +570,7 @@ object DataHelper {
         )
         return tvShow
     }
+
+
 
 }

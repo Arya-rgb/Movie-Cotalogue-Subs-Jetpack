@@ -7,6 +7,8 @@ import com.thorin.moviecotalogue.data.source.FilmRepository
 import com.thorin.moviecotalogue.di.Injection
 import com.thorin.moviecotalogue.ui.detail.detailmovie.DetailMovieViewModel
 import com.thorin.moviecotalogue.ui.detail.detailtvshow.DetailTvShowViewModel
+import com.thorin.moviecotalogue.ui.favorite.movie.MovieFragmentFavViewModel
+import com.thorin.moviecotalogue.ui.favorite.tvshow.TvShowFavViewModel
 import com.thorin.moviecotalogue.ui.movie.MovieViewModel
 import com.thorin.moviecotalogue.ui.tvshow.TvShowViewModel
 
@@ -39,6 +41,12 @@ class ViewModelFactory(private val mFilmRepository: FilmRepository) :
             }
             modelClass.isAssignableFrom(DetailTvShowViewModel::class.java) -> {
                 DetailTvShowViewModel(mFilmRepository) as T
+            }
+            modelClass.isAssignableFrom(MovieFragmentFavViewModel::class.java) -> {
+                MovieFragmentFavViewModel(mFilmRepository) as T
+            }
+            modelClass.isAssignableFrom(TvShowFavViewModel::class.java) -> {
+                TvShowFavViewModel(mFilmRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel Class: " + modelClass.name)
         }

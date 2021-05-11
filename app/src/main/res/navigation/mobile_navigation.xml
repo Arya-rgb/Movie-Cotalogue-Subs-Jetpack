@@ -13,13 +13,8 @@
 
     <fragment
         android:id="@+id/navigation_favorite"
-        android:name="com.thorin.moviecotalogue.ui.home.FavoriteFragment"
+        android:name="com.thorin.moviecotalogue.ui.favorite.FavoriteFragment"
         android:label="@string/Favorite"
         tools:layout="@layout/fragment_favorite" />
 
-    <fragment
-        android:id="@+id/navigation_settings"
-        android:name="com.thorin.moviecotalogue.ui.home.ui.notifications.NotificationsFragment"
-        android:label="@string/Settings"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

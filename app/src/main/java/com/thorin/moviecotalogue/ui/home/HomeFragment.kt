@@ -6,9 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-
 import com.thorin.moviecotalogue.databinding.FragmentHomeBinding
-import com.thorin.moviecotalogue.ui.home.SectionsPagerAdapter
 
 
 class HomeFragment : Fragment() {
